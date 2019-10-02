@@ -13,14 +13,14 @@ public class CyclicRotation {
         int[] A = new int[]{3, 8, 9, 7, 6};
         int K = 3;
 
-        Solution s = new Solution();
+        SolutionCyclicRotation s = new SolutionCyclicRotation();
         int[] R = s.solution(A, K);
         System.out.println(Arrays.stream(R).mapToObj(r -> String.valueOf(r)).collect(joining(", ")) );
     }
 
 }
 
-class Solution {
+class SolutionCyclicRotation {
 
     public int[] solution(int[] A, int K) {
         if (A.length==0) {
