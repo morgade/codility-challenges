@@ -6,14 +6,6 @@ package com.morgade.codility.challenges;
  */
 public class PermCheck {
 
-    public static void main(String[] args) {
-        SolutionPermCheck s = new SolutionPermCheck();
-        System.out.println(s.solution(new int[] {4,1,3}));
-    }
-}
-
-class SolutionPermCheck {
-
     public int solution(int[] A) {
         boolean[] found = new boolean[A.length];
         
@@ -28,4 +20,3 @@ class SolutionPermCheck {
         return 1;
     }
 }
-
