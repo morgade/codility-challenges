@@ -1,8 +1,5 @@
 package com.morgade.codility.challenges;
 
-import java.util.Arrays;
-import static java.util.stream.Collectors.joining;
-
 /**
  *
  * @author osboxes
@@ -21,10 +18,6 @@ public class MaxCounters {
             } else {
                 all = max;
             }
-            
-            final int a = all;
-            System.out.println("#"+Arrays.stream(counters).mapToObj(x->String.valueOf(Math.max(a, x))).collect(joining(", ")));
-            
         }
         
         for (int i = 0; i < counters.length; i++) {
